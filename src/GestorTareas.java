@@ -24,7 +24,6 @@ import java.util.Scanner;
             System.out.println("De que asignatura es");
             String asigCrear = sc.nextLine();
             System.out.println("Que nota sacaste");
-            sc.nextLine();
             double notaCrear = sc.nextDouble();
 
             Tarea tareas = new Tarea(tituloCrear, descCrear, asigCrear, notaCrear);
@@ -40,14 +39,4 @@ import java.util.Scanner;
         }
 
 
-        public void mostrarTareas() {
-
-            if (listaTareas.isEmpty()) {
-                System.out.println("No hay tareas registradas.");
-            } else {
-                for (Tarea tarea : listaTareas) {
-                    System.out.println(tarea);
-                }
-            }
-        }
 }
