@@ -24,8 +24,8 @@ import java.util.Scanner;
             System.out.println("De que asignatura es");
             String asigCrear = sc.nextLine();
             System.out.println("Que nota sacaste");
-            sc.nextLine();
             double notaCrear = sc.nextDouble();
+            sc.nextLine();
 
             Tarea tareas = new Tarea(tituloCrear, descCrear, asigCrear, notaCrear);
             listaTareas.add(tareas);
@@ -39,7 +39,9 @@ import java.util.Scanner;
 
         }
 
-
+        /**
+         * @author Alberto GF
+         */
         public void mostrarTareas() {
 
             if (listaTareas.isEmpty()) {

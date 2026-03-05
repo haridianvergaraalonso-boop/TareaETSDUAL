@@ -8,15 +8,24 @@ public class Main {
 
 
         do {
-            System.out.println("1.Añadir tarea");
+            System.out.println("1.Añadir tarea \n2.listar \n3.salir");
 
             opcion = sc.nextInt();
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     gt.crearTareas();
+                    break;
+                case 2:
+                    gt.mostrarTareas();
+                    break;
+                case 3:
+                    System.out.println("saliendo de la app");
+                    break;
+                default:
+                    System.out.println("opcion invalida");
             }
 
-        }while (opcion !=3);
+        } while (opcion != 3);
 
     }
 }

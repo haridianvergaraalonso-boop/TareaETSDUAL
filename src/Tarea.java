@@ -51,10 +51,10 @@ public class Tarea {
 
     @Override
     public String toString() {
-        return "Título: " + tituloTarea +
-                "Descripción: " + descripcionTarea +
-                "Asignatura: " + asignaturaTarea +
-                "Nota: " + notaTarea +
+        return "Título:" + tituloTarea +
+                " Descripción:" + descripcionTarea +
+                " Asignatura:" + asignaturaTarea +
+                " Nota:" + notaTarea +
                 "----------------------"; //rayas decorativas 🥺
     }
 }
